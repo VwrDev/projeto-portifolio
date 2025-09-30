@@ -194,6 +194,41 @@ article h2 {
   border-radius: 4px;
 }
 
+/*FORMACAO*/
+#formacao-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 15px;
+}
+
+#formacao-container .curso {
+  background-color: var(--fundo-principal);
+  border-radius: 8px;
+  border-left: 5px solid var(--destaque-inverso); /*Efeito bonito*/
+  padding-left: 10px;
+}
+
+#formacao-container .curso:hover {
+  border-left-width: 15px; /*Faz com que o efeito bonito fique animado*/
+  border-color: var(--destaque);
+
+  cursor: pointer; /*Faz com que o cursor vire um ponteiro*/
+  transition: border-width 0.5s, border-color 0.5s;
+}
+
+#formacao-container .periodo {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: var(--texto);
+}
+
+#formacao-container .instituicao {
+  font-size: 1.1em;
+  color: var(--destaque-inverso);
+
+}
+
+
 
 @media screen and (min-width: 768px) {
   #skill-container {
